@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Henrique Lira, consultoria de investimentos (exercício acadêmico)</title>
+  <meta name="description" content="Exercício acadêmico de Front-End (FIAP): landing page de uma consultoria de investimentos fictícia, com plano por escrito, custo à vista e risco explicado.">
+  <meta name="theme-color" content="#14201E">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Henrique Lira, consultoria de investimentos (exercício acadêmico)">
+  <meta property="og:description" content="Plano por escrito, custo à vista e risco explicado. Persona fictícia, exercício de Front-End da FIAP.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+  <div class="progresso" id="progresso" aria-hidden="true"></div>
+
+  <div class="faixa-exercicio" role="note">
+    <p>Exercício acadêmico. Henrique Lira é uma persona fictícia, sem registro na CVM. Nenhum dado é enviado e todo número é fictício.</p>
+  </div>
+
+  <header class="topo" id="topo">
+    <div class="contenedor topo-linha">
+      <a class="marca" href="#inicio">Henrique Lira <span>consultoria</span></a>
+      <details class="menu" id="menu">
+        <summary>Menu</summary>
+        <nav aria-label="Principal">
+          <ul>
+            <li><a href="#metodo">Método</a></li>
+            <li><a href="#custos">Custos</a></li>
+            <li><a href="#riscos">Riscos</a></li>
+            <li><a href="#casos">Casos</a></li>
+            <li><a href="#carteiras">Carteiras</a></li>
+            <li><a href="#simulador">Simulador</a></li>
+            <li><a href="#perguntas">Perguntas</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- 1. Hero -->
+    <section class="hero" id="inicio" aria-labelledby="titulo-hero">
+      <div class="contenedor hero-grade">
+        <div class="hero-texto">
+          <p class="sobretitulo">Consultoria independente · São Paulo</p>
+          <h1 id="titulo-hero">Seu plano de investimentos, <em>por escrito</em>.</h1>
+          <p class="lide">Custo à vista e risco explicado. Você recebe um documento para ler com calma, não uma promessa.</p>
+          <p><a class="botao botao-claro botao-grande" href="#contato">Pré-agendar uma conversa</a></p>
+          <p class="aviso aviso-escuro">Investir envolve risco de perda. Nenhum resultado é certo.</p>
+        </div>
+        <figure class="doc-cena">
+          <div class="doc">
+            <p class="doc-topo">Plano de investimentos · exemplo fictício</p>
+            <p class="doc-titulo">Plano de uma pessoa fictícia</p>
+            <div class="doc-secao">
+              <p class="doc-rotulo">1. Objetivo</p>
+              <p class="doc-texto">Formar uma reserva equivalente a 6 meses de gastos.</p>
+            </div>
+            <div class="doc-secao">
+              <p class="doc-rotulo">2. Horizonte e revisão</p>
+              <p class="doc-texto">12 meses. Revisão marcada para o mês 6.</p>
+            </div>
+            <div class="doc-secao marcada">
+              <p class="doc-rotulo">3. Riscos, explicados</p>
+              <p class="doc-texto">O valor pode cair. O resgate pode demorar. A inflação pode reduzir o poder de compra.</p>
+              <p class="margem" aria-hidden="true">risco escrito aqui</p>
+            </div>
+            <div class="doc-secao">
+              <p class="doc-rotulo">4. Custo, à vista</p>
+              <p class="doc-texto">Valor fixo, pago pelo cliente. Sem comissão.</p>
+            </div>
+            <p class="doc-pe">Investir envolve risco de perda. Documento fictício, sem dados reais.</p>
+          </div>
+          <figcaption class="legenda-escura">Exemplo fictício de plano, criado para este exercício.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 2. Princípio: citação grande + foto -->
+    <section id="principio" class="principio" aria-labelledby="t-principio">
+      <figure class="principio-foto">
+        <img src="img/foto-sao-paulo.jpg" width="1600" height="1067" loading="lazy" alt="Prédios residenciais e comerciais de São Paulo sob céu nublado, vistos de cima.">
+        <figcaption>Imagem ilustrativa: São Paulo. Foto de Nathana Rebouças, Unsplash.</figcaption>
+      </figure>
+      <div class="principio-texto">
+        <h2 id="t-principio" class="so-leitor">Princípio</h2>
+        <blockquote class="reveal">
+          <p>Primeiro o risco, depois o número. Se não está por escrito, não foi combinado.</p>
+        </blockquote>
+        <p class="nota-grande reveal">Dois princípios deste exercício: o plano é um documento que você leva para casa, e o custo aparece antes da conversa.</p>
+      </div>
+    </section>
+
+    <!-- 3. Método: linha do tempo -->
+    <section id="metodo" class="secao metodo" aria-labelledby="t-metodo">
+      <div class="contenedor metodo-grade">
+        <div>
+          <div class="reveal">
+            <h2 id="t-metodo">Como o plano é feito</h2>
+            <p class="sub">Três passos, todos por escrito.</p>
+          </div>
+          <ol class="linha-do-tempo">
+            <li class="reveal"><span class="passo-n num" aria-hidden="true">1</span><h3>Conversa</h3><p>Sobre objetivos e prazo. Você fala, eu anoto.</p></li>
+            <li class="reveal"><span class="passo-n num" aria-hidden="true">2</span><h3>Plano por escrito</h3><p>Cada risco explicado em linguagem simples, num documento só seu.</p></li>
+            <li class="reveal"><span class="passo-n num" aria-hidden="true">3</span><h3>Revisão combinada</h3><p>Em data marcada, sem venda de produto.</p></li>
+          </ol>
+          <p class="aviso reveal">A decisão de investir é sempre sua.</p>
+        </div>
+        <figure class="ilustra-plano">
+          <svg viewBox="0 0 340 440" role="img" aria-labelledby="svg-plano-t svg-plano-d" focusable="false">
+            <title id="svg-plano-t">O plano é o próprio documento</title>
+            <desc id="svg-plano-d">Página de um plano fictício com objetivo, horizonte, riscos e custo, e anotações à caneta na margem: você decide, data marcada, risco escrito e à vista, sem surpresa.</desc>
+            <rect class="sp-folha" x="4" y="4" width="332" height="432" rx="2"/>
+            <line class="sp-margem" x1="212" y1="4" x2="212" y2="436"/>
+            <text class="sp-titulo" x="20" y="36">Plano por escrito</text>
+            <text class="sp-suave" x="20" y="56">exemplo fictício</text>
+            <line class="sp-regua" x1="20" y1="66" x2="198" y2="66"/>
+
+            <text class="sp-rotulo" x="20" y="92">Objetivo</text>
+            <text class="sp-texto" x="20" y="112">Reserva para 12 meses</text>
+            <text class="sp-texto" x="20" y="130">de gastos.</text>
+
+            <text class="sp-rotulo" x="20" y="170">Horizonte</text>
+            <text class="sp-texto" x="20" y="190">Revisão no mês 6,</text>
+            <text class="sp-texto" x="20" y="208">em data combinada.</text>
+
+            <rect class="sp-marca" x="12" y="236" width="192" height="84"/>
+            <text class="sp-rotulo" x="20" y="258">Riscos</text>
+            <text class="sp-texto" x="20" y="278">O valor pode cair.</text>
+            <text class="sp-texto" x="20" y="296">O resgate pode demorar.</text>
+            <text class="sp-texto" x="20" y="314">A inflação pode corroer.</text>
+
+            <text class="sp-rotulo" x="20" y="352">Custo</text>
+            <text class="sp-texto" x="20" y="372">Fixo, pago à vista.</text>
+            <text class="sp-texto" x="20" y="390">Sem comissão.</text>
+
+            <line class="sp-regua" x1="20" y1="404" x2="198" y2="404"/>
+            <text class="sp-suave" x="20" y="424">Investir envolve risco de perda.</text>
+
+            <g class="sp-caneta">
+              <text class="sp-nota" x="222" y="104" transform="rotate(-3 222 104)">você decide</text>
+              <path d="M218 112 C210 118 206 114 200 110"/>
+              <text class="sp-nota" x="222" y="190" transform="rotate(-3 222 190)">data marcada</text>
+              <path d="M218 198 C210 204 206 200 202 196"/>
+              <text class="sp-nota" x="222" y="270" transform="rotate(-3 222 270)">risco escrito,</text>
+              <text class="sp-nota" x="222" y="288" transform="rotate(-3 222 288)">sem letra miúda</text>
+              <path d="M216 296 C210 304 206 300 202 296"/>
+              <text class="sp-nota" x="222" y="372" transform="rotate(-3 222 372)">à vista,</text>
+              <text class="sp-nota" x="222" y="390" transform="rotate(-3 222 390)">sem surpresa</text>
+              <path d="M216 398 C210 404 206 400 202 396"/>
+              <ellipse cx="40" cy="254" rx="30" ry="12"/>
+            </g>
+          </svg>
+          <figcaption>Ilustração autoral: a margem anotada do plano. Exemplo fictício.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 4. Custos: faixa escura com tabela em destaque -->
+    <section id="custos" class="custos" aria-labelledby="t-custos">
+      <div class="contenedor custos-grade">
+        <div class="reveal">
+          <h2 id="t-custos">Quanto custa, antes de qualquer conversa</h2>
+          <p class="sub-escuro">Valor fixo, pago por você. Nenhuma comissão de corretora ou de produto.</p>
+          <h3>O que o contrato cobre</h3>
+          <ul class="lista">
+            <li>Plano por escrito, com riscos explicados.</li>
+            <li>Uma revisão combinada em data marcada.</li>
+          </ul>
+          <h3>O que não cobre</h3>
+          <ul class="lista">
+            <li>Venda ou distribuição de produto financeiro.</li>
+            <li>Ordens de compra e venda em seu nome.</li>
+          </ul>
+        </div>
+        <div class="reveal tabela-caixa">
+          <table>
+            <caption>Valores de exemplo (fictícios)</caption>
+            <thead><tr><th scope="col">Serviço</th><th scope="col" class="dir">Valor</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Plano por escrito</th><td class="dir num">R$ 1.200</td></tr>
+              <tr><th scope="row">Revisão do plano</th><td class="dir num">R$ 400</td></tr>
+            </tbody>
+          </table>
+          <p class="nota">Valores fictícios, criados para este exercício. Sem taxa sobre ganho. Sem parceria paga com corretora. Investir envolve risco de perda.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Riscos: lista editorial -->
+    <section id="riscos" class="secao" aria-labelledby="t-riscos">
+      <div class="contenedor">
+        <div class="reveal">
+          <h2 id="t-riscos">O que pode dar errado, e o que não está no serviço</h2>
+          <p class="sub">O risco vem antes do número.</p>
+        </div>
+        <ol class="editorial">
+          <li class="reveal"><span class="ed-n num" aria-hidden="true">01</span><div><h3>Perda de capital</h3><p>O valor investido pode cair e você pode receber menos do que aplicou.</p></div></li>
+          <li class="reveal"><span class="ed-n num" aria-hidden="true">02</span><div><h3>Liquidez</h3><p>Alguns investimentos não podem ser resgatados na hora ou têm prazo para sair.</p></div></li>
+          <li class="reveal"><span class="ed-n num" aria-hidden="true">03</span><div><h3>Concentração</h3><p>Muito dinheiro em poucos ativos aumenta o efeito de um erro.</p></div></li>
+          <li class="reveal"><span class="ed-n num" aria-hidden="true">04</span><div><h3>Inflação</h3><p>Se os preços sobem mais do que o investimento rende, o poder de compra diminui.</p></div></li>
+        </ol>
+        <div class="reveal destaque">
+          <h3>Conflito de interesses</h3>
+          <p>Este consultor não distribui nem vende produto financeiro. A única remuneração vem de quem contrata, em valor fixo e à vista.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Casos: linhas editoriais -->
+    <section id="casos" class="secao alt" aria-labelledby="t-casos">
+      <div class="contenedor">
+        <div class="reveal">
+          <h2 id="t-casos">Três casos inventados para este exercício</h2>
+          <p class="sub">Nomes, valores e resultados são fictícios. Cada caso tem o mesmo peso, para cima ou para baixo.</p>
+        </div>
+        <ul class="casos-lista">
+          <li class="reveal">
+            <div class="caso-id">
+              <span class="selo">Caso fictício</span>
+              <h3>Reserva de emergência</h3>
+            </div>
+            <div class="caso-res">
+              <p class="resultado positivo num"><span aria-hidden="true">+</span><span class="so-leitor">mais </span>R$ 310 em 12 meses (fictício)</p>
+              <p class="nota">Resultado passado não indica resultado futuro. Investir envolve risco de perda.</p>
+            </div>
+            <button type="button" class="botao botao-contorno" data-caso="caso-a">Abrir a ficha do caso<span class="so-leitor">: Reserva de emergência</span></button>
+          </li>
+          <li class="reveal">
+            <div class="caso-id">
+              <span class="selo">Caso fictício</span>
+              <h3>Aposentadoria</h3>
+            </div>
+            <div class="caso-res">
+              <p class="resultado positivo num"><span aria-hidden="true">+</span><span class="so-leitor">mais </span>R$ 860 em 12 meses, com parte em queda (fictício)</p>
+              <p class="nota">Resultado passado não indica resultado futuro. Investir envolve risco de perda.</p>
+            </div>
+            <button type="button" class="botao botao-contorno" data-caso="caso-b">Abrir a ficha do caso<span class="so-leitor">: Aposentadoria</span></button>
+          </li>
+          <li class="reveal">
+            <div class="caso-id">
+              <span class="selo">Caso fictício</span>
+              <h3>Carteira de ações</h3>
+            </div>
+            <div class="caso-res">
+              <p class="resultado negativo num"><span aria-hidden="true">−</span><span class="so-leitor">menos </span>R$ 1.850 em 12 meses (fictício)</p>
+              <p class="nota">Resultado passado não indica resultado futuro. Investir envolve risco de perda.</p>
+            </div>
+            <button type="button" class="botao botao-contorno" data-caso="caso-c">Abrir a ficha do caso<span class="so-leitor">: Carteira de ações</span></button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 7. Carteiras de exemplo -->
+    <section id="carteiras" class="secao carteiras" aria-labelledby="t-carteiras">
+      <div class="contenedor">
+        <div class="carteiras-intro">
+          <div class="reveal">
+            <h2 id="t-carteiras">Carteiras de exemplo</h2>
+            <p class="sub">Três modelos didáticos e fictícios, para mostrar composição, liquidez e risco. Nenhum número de ganho.</p>
+            <p class="nota">Cada modelo mostra como o dinheiro pode ser dividido, não o que vai acontecer com ele. Troque de carteira para comparar.</p>
+            <button type="button" class="botao botao-contorno" id="alterna-anim" aria-pressed="false">Desativar animações</button>
+          </div>
+          <figure class="foto-planta reveal">
+            <img src="img/foto-planta-vaso.jpg" width="1400" height="930" loading="lazy" alt="Mudas de folhas verdes crescendo em um pote verde-claro sobre uma mesa, vistas de cima.">
+            <figcaption>Imagem ilustrativa. Foto de Ksenia Pixelesse, Unsplash.</figcaption>
+          </figure>
+        </div>
+        <div class="comparador" id="comparador">
+          <article class="cart" id="cart-a" data-nome="Reserva e proteção" data-resumo="Até 12 meses. Quem prioriza ter o dinheiro à mão." data-prazo="12" aria-labelledby="cart-a-t">
+            <header class="cart-topo">
+              <svg class="cart-icone" viewBox="0 0 64 64" role="img" aria-label="Ilustração de um guarda-chuva sobre uma base, simbolizando proteção." focusable="false"><path d="M8 34 a24 22 0 0 1 48 0 Z"/><path d="M32 34 v14 a5 5 0 0 1 -10 0"/><path d="M32 12 v-4"/><rect x="14" y="52" width="36" height="8" rx="1"/></svg>
+              <div>
+                <p class="selo">Modelo didático, não é recomendação</p>
+                <h3 id="cart-a-t">Reserva e proteção</h3>
+                <p class="cart-serve"><strong>Para que serve:</strong> Guardar o dinheiro de gastos e imprevistos de modo que esteja à mão quando for preciso.</p>
+              </div>
+            </header>
+            <div class="cart-corpo">
+              <div class="cart-viz">
+                <svg class="rosca" viewBox="0 0 120 120" role="img" aria-labelledby="rt-a rd-a" focusable="false"><title id="rt-a">Composição da carteira Reserva e proteção</title><desc id="rd-a">Renda fixa pós-fixada 50 por cento; Tesouro (títulos públicos) 30 por cento; Renda fixa prefixada ou atrelada à inflação 15 por cento; Fundos imobiliários 5 por cento. Modelo didático e fictício.</desc><circle class="trilho" cx="60" cy="60" r="48"/><circle class="seg seg-0" data-seg="0" cx="60" cy="60" r="48" pathLength="100" style="--i:0;--cor:#0B5C5A" stroke-dasharray="49.4 50.6" stroke-dashoffset="0.0"/><circle class="seg seg-1" data-seg="1" cx="60" cy="60" r="48" pathLength="100" style="--i:1;--cor:#3647A0" stroke-dasharray="29.4 70.6" stroke-dashoffset="-50.0"/><circle class="seg seg-2" data-seg="2" cx="60" cy="60" r="48" pathLength="100" style="--i:2;--cor:#8A5A00" stroke-dasharray="14.4 85.6" stroke-dashoffset="-80.0"/><circle class="seg seg-3" data-seg="3" cx="60" cy="60" r="48" pathLength="100" style="--i:3;--cor:#7A2E86" stroke-dasharray="4.4 95.6" stroke-dashoffset="-95.0"/><text class="rosca-t" x="60" y="57" text-anchor="middle">Modelo</text><text class="rosca-t" x="60" y="70" text-anchor="middle">didático</text></svg>
+                <table class="comp"><caption>Composição por classe de ativo, em percentual do total</caption><thead><tr><th scope="col">Classe de ativo</th><th scope="col" class="dir">Parte</th></tr></thead><tbody><tr data-seg="0"><th scope="row"><span class="chave" style="--cor:#0B5C5A" aria-hidden="true"></span>Renda fixa pós-fixada</th><td class="dir num"><span class="cont" data-valor="50">50%</span></td></tr><tr data-seg="1"><th scope="row"><span class="chave" style="--cor:#3647A0" aria-hidden="true"></span>Tesouro (títulos públicos)</th><td class="dir num"><span class="cont" data-valor="30">30%</span></td></tr><tr data-seg="2"><th scope="row"><span class="chave" style="--cor:#8A5A00" aria-hidden="true"></span>Renda fixa prefixada ou atrelada à inflação</th><td class="dir num"><span class="cont" data-valor="15">15%</span></td></tr><tr data-seg="3"><th scope="row"><span class="chave" style="--cor:#7A2E86" aria-hidden="true"></span>Fundos imobiliários</th><td class="dir num"><span class="cont" data-valor="5">5%</span></td></tr><tr data-seg="4"><th scope="row"><span class="chave" style="--cor:#A3281C" aria-hidden="true"></span>Ações</th><td class="dir num"><span class="cont" data-valor="0">0%</span></td></tr><tr data-seg="5"><th scope="row"><span class="chave" style="--cor:#5B6B00" aria-hidden="true"></span>Exterior</th><td class="dir num"><span class="cont" data-valor="0">0%</span></td></tr></tbody><tfoot><tr><th scope="row">Total</th><td class="dir num">100%</td></tr></tfoot></table>
+              </div>
+              <dl class="cart-dados">
+                <div><dt>Para quem pode fazer sentido</dt><dd>Quem quer o dinheiro disponível para gastos e imprevistos e aceita pouca oscilação.</dd></div>
+                <div><dt>Horizonte</dt><dd>Até 12 meses.</dd></div>
+                <div><dt>Liquidez</dt><dd>Alta. A maior parte pode ser resgatada em poucos dias úteis. A parte em fundos imobiliários depende de comprador na bolsa, e o preço do dia pode ser menor do que o pago.</dd></div>
+                <div><dt>Custo</dt><dd>A regra é a da seção Custos: valor fixo, pago por você, à vista, sem comissão e sem taxa sobre ganho. Valores de exemplo (fictícios): R$ 1.200 o plano e R$ 400 a revisão. Fundos, quando houver, cobram taxa própria, descontada do valor investido.</dd></div>
+              </dl>
+            </div>
+            <div class="cart-riscos">
+              <h4>O que pode dar errado</h4>
+              <ul><li><strong>Mercado.</strong> Títulos prefixados e fundos imobiliários podem valer menos hoje do que na semana passada. Numa semana ruim, o saldo pode mostrar menos do que você aplicou.</li><li><strong>Crédito.</strong> Se quem emitiu um título privado não pagar, parte do valor pode ser perdida.</li><li><strong>Liquidez.</strong> O resgate pode levar dias, e vender cotas na bolsa exige ter alguém querendo comprar.</li><li><strong>Concentração.</strong> Quase tudo está numa família de ativos. Um problema que atinja a renda fixa atinge quase tudo de uma vez.</li></ul>
+            </div>
+            <div class="cart-rodape">
+              <p class="aviso">Investir envolve risco de perda. Esta composição é um exemplo fictício e não é recomendação: a carteira real depende de perfil, objetivo e horizonte.</p>
+              <button type="button" class="botao botao-contorno" data-usar-prazo="12">Usar esta carteira no simulador<span class="so-leitor">: Reserva e proteção, preenche só o prazo de 12 meses</span></button>
+            </div>
+          </article>
+          <article class="cart" id="cart-b" data-nome="Equilíbrio" data-resumo="3 a 5 anos. Quem aceita alguma oscilação." data-prazo="60" aria-labelledby="cart-b-t">
+            <header class="cart-topo">
+              <svg class="cart-icone" viewBox="0 0 64 64" role="img" aria-label="Ilustração de uma balança em equilíbrio, com dois pratos." focusable="false"><path d="M32 10 v44"/><path d="M18 54 h28"/><path d="M12 22 h40"/><path d="M12 22 l-7 16 a9 5 0 0 0 14 0 Z"/><path d="M52 22 l-7 16 a9 5 0 0 0 14 0 Z"/><circle cx="32" cy="10" r="2.5"/></svg>
+              <div>
+                <p class="selo">Modelo didático, não é recomendação</p>
+                <h3 id="cart-b-t">Equilíbrio</h3>
+                <p class="cart-serve"><strong>Para que serve:</strong> Reunir dinheiro para um objetivo de médio prazo, aceitando que o valor oscile no caminho.</p>
+              </div>
+            </header>
+            <div class="cart-corpo">
+              <div class="cart-viz">
+                <svg class="rosca" viewBox="0 0 120 120" role="img" aria-labelledby="rt-b rd-b" focusable="false"><title id="rt-b">Composição da carteira Equilíbrio</title><desc id="rd-b">Renda fixa pós-fixada 25 por cento; Tesouro (títulos públicos) 20 por cento; Renda fixa prefixada ou atrelada à inflação 20 por cento; Fundos imobiliários 15 por cento; Ações 15 por cento; Exterior 5 por cento. Modelo didático e fictício.</desc><circle class="trilho" cx="60" cy="60" r="48"/><circle class="seg seg-0" data-seg="0" cx="60" cy="60" r="48" pathLength="100" style="--i:0;--cor:#0B5C5A" stroke-dasharray="24.4 75.6" stroke-dashoffset="0.0"/><circle class="seg seg-1" data-seg="1" cx="60" cy="60" r="48" pathLength="100" style="--i:1;--cor:#3647A0" stroke-dasharray="19.4 80.6" stroke-dashoffset="-25.0"/><circle class="seg seg-2" data-seg="2" cx="60" cy="60" r="48" pathLength="100" style="--i:2;--cor:#8A5A00" stroke-dasharray="19.4 80.6" stroke-dashoffset="-45.0"/><circle class="seg seg-3" data-seg="3" cx="60" cy="60" r="48" pathLength="100" style="--i:3;--cor:#7A2E86" stroke-dasharray="14.4 85.6" stroke-dashoffset="-65.0"/><circle class="seg seg-4" data-seg="4" cx="60" cy="60" r="48" pathLength="100" style="--i:4;--cor:#A3281C" stroke-dasharray="14.4 85.6" stroke-dashoffset="-80.0"/><circle class="seg seg-5" data-seg="5" cx="60" cy="60" r="48" pathLength="100" style="--i:5;--cor:#5B6B00" stroke-dasharray="4.4 95.6" stroke-dashoffset="-95.0"/><text class="rosca-t" x="60" y="57" text-anchor="middle">Modelo</text><text class="rosca-t" x="60" y="70" text-anchor="middle">didático</text></svg>
+                <table class="comp"><caption>Composição por classe de ativo, em percentual do total</caption><thead><tr><th scope="col">Classe de ativo</th><th scope="col" class="dir">Parte</th></tr></thead><tbody><tr data-seg="0"><th scope="row"><span class="chave" style="--cor:#0B5C5A" aria-hidden="true"></span>Renda fixa pós-fixada</th><td class="dir num"><span class="cont" data-valor="25">25%</span></td></tr><tr data-seg="1"><th scope="row"><span class="chave" style="--cor:#3647A0" aria-hidden="true"></span>Tesouro (títulos públicos)</th><td class="dir num"><span class="cont" data-valor="20">20%</span></td></tr><tr data-seg="2"><th scope="row"><span class="chave" style="--cor:#8A5A00" aria-hidden="true"></span>Renda fixa prefixada ou atrelada à inflação</th><td class="dir num"><span class="cont" data-valor="20">20%</span></td></tr><tr data-seg="3"><th scope="row"><span class="chave" style="--cor:#7A2E86" aria-hidden="true"></span>Fundos imobiliários</th><td class="dir num"><span class="cont" data-valor="15">15%</span></td></tr><tr data-seg="4"><th scope="row"><span class="chave" style="--cor:#A3281C" aria-hidden="true"></span>Ações</th><td class="dir num"><span class="cont" data-valor="15">15%</span></td></tr><tr data-seg="5"><th scope="row"><span class="chave" style="--cor:#5B6B00" aria-hidden="true"></span>Exterior</th><td class="dir num"><span class="cont" data-valor="5">5%</span></td></tr></tbody><tfoot><tr><th scope="row">Total</th><td class="dir num">100%</td></tr></tfoot></table>
+              </div>
+              <dl class="cart-dados">
+                <div><dt>Para quem pode fazer sentido</dt><dd>Quem aceita alguma oscilação para não deixar o dinheiro parado, com um objetivo de médio prazo.</dd></div>
+                <div><dt>Horizonte</dt><dd>De 3 a 5 anos.</dd></div>
+                <div><dt>Liquidez</dt><dd>Média. A renda fixa pós-fixada e o Tesouro saem em poucos dias. Ações e fundos imobiliários dependem de comprador na bolsa, e parte da renda fixa pode ter prazo para sair.</dd></div>
+                <div><dt>Custo</dt><dd>A regra é a da seção Custos: valor fixo, pago por você, à vista, sem comissão e sem taxa sobre ganho. Valores de exemplo (fictícios): R$ 1.200 o plano e R$ 400 a revisão. Fundos, quando houver, cobram taxa própria, descontada do valor investido.</dd></div>
+              </dl>
+            </div>
+            <div class="cart-riscos">
+              <h4>O que pode dar errado</h4>
+              <ul><li><strong>Mercado.</strong> Ações e fundos imobiliários podem cair juntos por meses. Num ano ruim, o saldo pode ficar abaixo do aplicado por bastante tempo.</li><li><strong>Crédito.</strong> Títulos privados dependem de quem os emitiu. Se ele não pagar, parte do valor pode ser perdida.</li><li><strong>Liquidez.</strong> Quem precisar do dinheiro numa queda pode ter de vender por um preço baixo.</li><li><strong>Concentração.</strong> Mesmo dividida, a carteira tem pouco do exterior. Uma crise no país atinge quase todas as partes.</li></ul>
+            </div>
+            <div class="cart-rodape">
+              <p class="aviso">Investir envolve risco de perda. Esta composição é um exemplo fictício e não é recomendação: a carteira real depende de perfil, objetivo e horizonte.</p>
+              <button type="button" class="botao botao-contorno" data-usar-prazo="60">Usar esta carteira no simulador<span class="so-leitor">: Equilíbrio, preenche só o prazo de 60 meses</span></button>
+            </div>
+          </article>
+          <article class="cart" id="cart-c" data-nome="Crescimento de longo prazo" data-resumo="10 anos ou mais. Quem não precisa do dinheiro e tolera quedas." data-prazo="120" aria-labelledby="cart-c-t">
+            <header class="cart-topo">
+              <svg class="cart-icone" viewBox="0 0 64 64" role="img" aria-label="Ilustração de um broto com duas folhas saindo da terra." focusable="false"><path d="M6 54 h52"/><path d="M32 54 v-24"/><path d="M32 40 c-14 0 -18 -10 -18 -18 c12 0 18 6 18 18 z"/><path d="M32 32 c0 -10 6 -18 18 -18 c0 10 -6 18 -18 18 z"/></svg>
+              <div>
+                <p class="selo">Modelo didático, não é recomendação</p>
+                <h3 id="cart-c-t">Crescimento de longo prazo</h3>
+                <p class="cart-serve"><strong>Para que serve:</strong> Formar patrimônio para um objetivo distante, aceitando oscilações fortes pelo caminho.</p>
+              </div>
+            </header>
+            <div class="cart-corpo">
+              <div class="cart-viz">
+                <svg class="rosca" viewBox="0 0 120 120" role="img" aria-labelledby="rt-c rd-c" focusable="false"><title id="rt-c">Composição da carteira Crescimento de longo prazo</title><desc id="rd-c">Renda fixa pós-fixada 10 por cento; Tesouro (títulos públicos) 10 por cento; Renda fixa prefixada ou atrelada à inflação 15 por cento; Fundos imobiliários 20 por cento; Ações 30 por cento; Exterior 15 por cento. Modelo didático e fictício.</desc><circle class="trilho" cx="60" cy="60" r="48"/><circle class="seg seg-0" data-seg="0" cx="60" cy="60" r="48" pathLength="100" style="--i:0;--cor:#0B5C5A" stroke-dasharray="9.4 90.6" stroke-dashoffset="0.0"/><circle class="seg seg-1" data-seg="1" cx="60" cy="60" r="48" pathLength="100" style="--i:1;--cor:#3647A0" stroke-dasharray="9.4 90.6" stroke-dashoffset="-10.0"/><circle class="seg seg-2" data-seg="2" cx="60" cy="60" r="48" pathLength="100" style="--i:2;--cor:#8A5A00" stroke-dasharray="14.4 85.6" stroke-dashoffset="-20.0"/><circle class="seg seg-3" data-seg="3" cx="60" cy="60" r="48" pathLength="100" style="--i:3;--cor:#7A2E86" stroke-dasharray="19.4 80.6" stroke-dashoffset="-35.0"/><circle class="seg seg-4" data-seg="4" cx="60" cy="60" r="48" pathLength="100" style="--i:4;--cor:#A3281C" stroke-dasharray="29.4 70.6" stroke-dashoffset="-55.0"/><circle class="seg seg-5" data-seg="5" cx="60" cy="60" r="48" pathLength="100" style="--i:5;--cor:#5B6B00" stroke-dasharray="14.4 85.6" stroke-dashoffset="-85.0"/><text class="rosca-t" x="60" y="57" text-anchor="middle">Modelo</text><text class="rosca-t" x="60" y="70" text-anchor="middle">didático</text></svg>
+                <table class="comp"><caption>Composição por classe de ativo, em percentual do total</caption><thead><tr><th scope="col">Classe de ativo</th><th scope="col" class="dir">Parte</th></tr></thead><tbody><tr data-seg="0"><th scope="row"><span class="chave" style="--cor:#0B5C5A" aria-hidden="true"></span>Renda fixa pós-fixada</th><td class="dir num"><span class="cont" data-valor="10">10%</span></td></tr><tr data-seg="1"><th scope="row"><span class="chave" style="--cor:#3647A0" aria-hidden="true"></span>Tesouro (títulos públicos)</th><td class="dir num"><span class="cont" data-valor="10">10%</span></td></tr><tr data-seg="2"><th scope="row"><span class="chave" style="--cor:#8A5A00" aria-hidden="true"></span>Renda fixa prefixada ou atrelada à inflação</th><td class="dir num"><span class="cont" data-valor="15">15%</span></td></tr><tr data-seg="3"><th scope="row"><span class="chave" style="--cor:#7A2E86" aria-hidden="true"></span>Fundos imobiliários</th><td class="dir num"><span class="cont" data-valor="20">20%</span></td></tr><tr data-seg="4"><th scope="row"><span class="chave" style="--cor:#A3281C" aria-hidden="true"></span>Ações</th><td class="dir num"><span class="cont" data-valor="30">30%</span></td></tr><tr data-seg="5"><th scope="row"><span class="chave" style="--cor:#5B6B00" aria-hidden="true"></span>Exterior</th><td class="dir num"><span class="cont" data-valor="15">15%</span></td></tr></tbody><tfoot><tr><th scope="row">Total</th><td class="dir num">100%</td></tr></tfoot></table>
+              </div>
+              <dl class="cart-dados">
+                <div><dt>Para quem pode fazer sentido</dt><dd>Quem não precisa do dinheiro por muito tempo e tolera ver o saldo cair por longos períodos.</dd></div>
+                <div><dt>Horizonte</dt><dd>10 anos ou mais.</dd></div>
+                <div><dt>Liquidez</dt><dd>Menor. Ações e fundos imobiliários podem ser vendidos na bolsa, mas vender numa queda pode transformar uma perda temporária em perda definitiva.</dd></div>
+                <div><dt>Custo</dt><dd>A regra é a da seção Custos: valor fixo, pago por você, à vista, sem comissão e sem taxa sobre ganho. Valores de exemplo (fictícios): R$ 1.200 o plano e R$ 400 a revisão. Fundos, quando houver, cobram taxa própria, descontada do valor investido.</dd></div>
+              </dl>
+            </div>
+            <div class="cart-riscos">
+              <h4>O que pode dar errado</h4>
+              <ul><li><strong>Mercado.</strong> A parte em ações pode cair por anos seguidos. O saldo pode ficar bem abaixo do aplicado por muito tempo.</li><li><strong>Crédito.</strong> Títulos privados dependem de quem os emitiu. Se ele não pagar, parte do valor pode ser perdida.</li><li><strong>Liquidez.</strong> Fundos e ações podem ter poucos compradores justamente quando muita gente quer vender.</li><li><strong>Concentração.</strong> Poucas empresas na parte de ações repetem o que o caso fictício C mostra: o efeito de um erro fica maior.</li></ul>
+            </div>
+            <div class="cart-rodape">
+              <p class="aviso">Investir envolve risco de perda. Esta composição é um exemplo fictício e não é recomendação: a carteira real depende de perfil, objetivo e horizonte.</p>
+              <button type="button" class="botao botao-contorno" data-usar-prazo="120">Usar esta carteira no simulador<span class="so-leitor">: Crescimento de longo prazo, preenche só o prazo de 120 meses</span></button>
+            </div>
+          </article>
+        </div>
+        <figure class="faixa-foto reveal">
+          <div class="faixa-foto-q"><img id="paralaxe" src="img/foto-calculadora-caneta.jpg" width="1400" height="933" loading="lazy" alt="Calculadora científica e caneta metálica sobre uma folha com contas à mão, numa mesa de madeira."></div>
+          <figcaption>Imagem ilustrativa. Foto de Aaron Lefler, Unsplash.</figcaption>
+        </figure>
+        <p class="nota carteiras-nota">Modelos didáticos e fictícios, sem relação com produto, banco ou gestora reais. Investir envolve risco de perda.</p>
+      </div>
+    </section>
+
+    <!-- 8. Simulador -->
+    <section id="simulador" class="secao" aria-labelledby="t-sim">
+      <div class="contenedor">
+        <div class="reveal">
+          <h2 id="t-sim">Faça a conta com os seus números</h2>
+          <p class="sub">Os campos começam vazios: não há taxa padrão.</p>
+          <p class="nota" id="sim-origem" role="status" hidden></p>
+        </div>
+        <div class="grade-2 reveal">
+          <form id="form-sim" novalidate>
+            <div class="campo">
+              <label for="inicial">Valor inicial (R$)</label>
+              <input id="inicial" name="inicial" type="text" inputmode="decimal" autocomplete="off" aria-describedby="erro-inicial">
+              <p class="erro" id="erro-inicial" role="alert"></p>
+            </div>
+            <div class="campo">
+              <label for="aporte">Aporte mensal (R$)</label>
+              <input id="aporte" name="aporte" type="text" inputmode="decimal" autocomplete="off" aria-describedby="erro-aporte">
+              <p class="erro" id="erro-aporte" role="alert"></p>
+            </div>
+            <div class="campo">
+              <label for="prazo">Prazo (meses)</label>
+              <input id="prazo" name="prazo" type="text" inputmode="numeric" autocomplete="off" aria-describedby="erro-prazo">
+              <p class="erro" id="erro-prazo" role="alert"></p>
+            </div>
+            <div class="campo">
+              <label for="taxa">Taxa anual informada por você (%)</label>
+              <input id="taxa" name="taxa" type="text" inputmode="decimal" autocomplete="off" aria-describedby="erro-taxa">
+              <p class="erro" id="erro-taxa" role="alert"></p>
+            </div>
+            <button type="submit" class="botao">Fazer a conta</button>
+          </form>
+          <div class="resultado-sim" aria-live="polite" id="resultado-sim">
+            <p class="vazio" id="sim-vazio">Preencha os quatro campos para ver a conta.</p>
+            <div id="sim-saida" hidden>
+              <p>O que você digitou resulta em</p>
+              <p class="sim-valor num" id="sim-total"></p>
+              <p class="num" id="sim-detalhe"></p>
+              <p class="nota">Conta aritmética com o que você digitou. Não é projeção nem estimativa de retorno.</p>
+            </div>
+            <p class="aviso">Investimentos reais variam e podem ter perda.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Glossário + Perguntas: duas colunas -->
+    <section id="perguntas" class="secao alt" aria-labelledby="t-faq">
+      <div class="contenedor duas-col">
+        <div id="glossario" class="reveal">
+          <h2>Palavras que aparecem no plano</h2>
+          <dl class="glossario">
+            <div><dt>Risco</dt><dd>Chance de o resultado ser diferente do esperado, inclusive perda.</dd></div>
+            <div><dt>Liquidez</dt><dd>Rapidez com que você transforma o investimento em dinheiro.</dd></div>
+            <div><dt>Diversificação</dt><dd>Dividir o dinheiro em vários ativos para que um erro pese menos.</dd></div>
+            <div><dt>Inflação</dt><dd>Aumento geral de preços, que reduz o que o dinheiro compra.</dd></div>
+            <div><dt>Taxa de administração</dt><dd>Custo anual cobrado por alguns fundos, descontado do valor investido.</dd></div>
+            <div><dt>Come-cotas</dt><dd>Imposto cobrado em alguns fundos, adiantado, duas vezes por ano.</dd></div>
+          </dl>
+        </div>
+        <div class="reveal">
+          <h2 id="t-faq">Perguntas para fazer antes de contratar</h2>
+          <div class="faq">
+            <details><summary>Você vende produto?</summary><p>Não. Este consultor não distribui nem vende produto financeiro.</p></details>
+            <details><summary>Como você ganha?</summary><p>Valor fixo, pago por quem contrata, informado antes de qualquer conversa. Não há comissão nem taxa sobre ganho.</p></details>
+            <details><summary>Você promete algum resultado?</summary><p>Não. Ninguém pode afirmar o que vai acontecer com um investimento. O plano explica os riscos e a decisão é sua.</p></details>
+            <details><summary>Você é registrado na CVM?</summary><p>Não. Esta é uma persona fictícia de um exercício acadêmico.</p></details>
+            <details><summary>E se o plano der prejuízo?</summary><p>A perda é um risco real e está escrita no plano. O caso fictício C mostra como isso aparece no documento.</p></details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Contato -->
+    <section id="contato" class="contato" aria-labelledby="t-contato">
+      <div class="contenedor contato-grade">
+        <div>
+          <h2 id="t-contato">Pré-agendar uma conversa</h2>
+          <p class="sub-escuro">Três campos. Este formulário é parte do exercício: nada que você digitar é enviado ou guardado.</p>
+          <form id="form-contato" novalidate>
+            <div class="campo">
+              <label for="c-nome">Nome</label>
+              <input id="c-nome" name="nome" type="text" autocomplete="off" aria-describedby="erro-c-nome">
+              <p class="erro" id="erro-c-nome" role="alert"></p>
+            </div>
+            <div class="campo">
+              <label for="c-email">E-mail</label>
+              <input id="c-email" name="email" type="text" inputmode="email" autocomplete="off" aria-describedby="erro-c-email">
+              <p class="erro" id="erro-c-email" role="alert"></p>
+            </div>
+            <div class="campo">
+              <label for="c-periodo">Melhor período</label>
+              <select id="c-periodo" name="periodo">
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+              </select>
+            </div>
+            <button type="submit" class="botao botao-claro">Pré-agendar (exercício)</button>
+            <p class="nota-escura">Nenhum dado é enviado a qualquer servidor.</p>
+          </form>
+          <div class="sucesso" id="sucesso-contato" role="status" tabindex="-1" hidden>
+            <p class="selo-escuro">Exercício</p>
+            <p><strong>Simulação concluída.</strong> Nenhum dado foi enviado e ninguém vai entrar em contato. Numa página real, é aqui que apareceria a confirmação do horário.</p>
+            <button type="button" class="botao botao-claro" id="refazer-contato">Preencher de novo</button>
+          </div>
+        </div>
+        <figure class="foto-lateral foto-contato">
+          <img src="img/foto-caneta-caderno.jpg" width="1400" height="2104" loading="lazy" alt="Caneta azul sobre um caderno espiral de folhas pautadas, em uma mesa clara.">
+          <figcaption class="legenda-escura">Imagem ilustrativa. Foto de Ryunosuke Kikuno, Unsplash.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <div class="barra-acao" id="barra-acao" aria-hidden="true">
+    <div class="contenedor barra-linha">
+      <p><span class="barra-extra">Plano por escrito, custo à vista. </span>Investir envolve risco de perda.</p>
+      <a class="barra-link" href="#carteiras" tabindex="-1">Carteiras</a>
+      <a class="botao botao-claro" href="#contato" tabindex="-1">Pré-agendar<span class="barra-extra">&nbsp;uma conversa</span></a>
+    </div>
+  </div>
+
+  <footer class="rodape">
+    <div class="contenedor">
+      <p><strong>Exercício acadêmico de Front-End, FIAP.</strong> Henrique Lira é uma persona fictícia. Não há registro, credencial ou clientes reais, e nenhum formulário envia dados.</p>
+      <p>Investir envolve risco de perda. Resultado passado não indica resultado futuro.</p>
+      <details class="politica">
+        <summary>Política de negociação (exemplo fictício)</summary>
+        <p>Exemplo para este exercício: o consultor não negocia, para si, ativos que recomenda a clientes no mesmo período e declara por escrito qualquer posição que tenha.</p>
+      </details>
+      <p class="nota-rodape">Créditos: página feita por Henrique Lira para a disciplina de Front-End. Fontes tipográficas: Source Serif 4 e Inter, via Google Fonts. Fotos ilustrativas: Nathana Rebouças, Ryunosuke Kikuno, Ksenia Pixelesse e Aaron Lefler, na Unsplash License. Ilustração do plano e ícones das carteiras: autorais, em SVG. Referências visuais: Mercury, Warren, Nord Investimentos, Betterment e Wealthfront (apenas estudo).</p>
+    </div>
+  </footer>
+
+  <!-- Conferência dos casos fictícios (script Python com Decimal):
+       A: aportado 20000 + 500*12 = 26000; saldo 26310; resultado +310 = +1,19% (310/26000)
+       B: renda fixa +1480 sobre 40000 = +3,70%; ações -620 sobre 22000 = -2,82%;
+          total 1480-620 = +860 sobre 62000 (50000 + 1000*12) = +1,39%
+       C: aportado 12000 + 400*12 = 16800; resultado -1850; saldo 14950; -1850/16800 = -11,01% -->
+  <dialog id="caso-a" aria-labelledby="caso-a-t">
+    <div class="ficha">
+      <span class="selo">Caso fictício</span>
+      <h2 id="caso-a-t">Reserva de emergência</h2>
+      <dl>
+        <dt>Carteira</dt><dd>100% renda fixa de liquidez diária.</dd>
+        <dt>Prazo</dt><dd>12 meses.</dd>
+        <dt>Aportes</dt><dd class="num">R$ 20.000 no início e R$ 500 por mês (R$ 6.000), total aportado de R$ 26.000.</dd>
+        <dt>Resultado</dt><dd class="num positivo"><span aria-hidden="true">+</span><span class="so-leitor">mais </span>R$ 310, saldo de R$ 26.310. Variação sobre o total aportado: <span aria-hidden="true">+</span><span class="so-leitor">mais </span>1,19%.</dd>
+        <dt>O que o acompanhamento fez</dt><dd>Manteve o valor em investimento de resgate rápido e revisou em 6 meses se o valor ainda cobria os gastos.</dd>
+      </dl>
+      <p class="nota">Caso fictício. Resultado passado não indica resultado futuro. Investir envolve risco de perda.</p>
+      <button type="button" class="botao fechar">Fechar</button>
+    </div>
+  </dialog>
+
+  <dialog id="caso-b" aria-labelledby="caso-b-t">
+    <div class="ficha">
+      <span class="selo">Caso fictício</span>
+      <h2 id="caso-b-t">Aposentadoria</h2>
+      <dl>
+        <dt>Carteira</dt><dd>Renda fixa de longo prazo (R$ 40.000 aportados) e fundo de ações (R$ 22.000 aportados).</dd>
+        <dt>Prazo</dt><dd>12 meses.</dd>
+        <dt>Aportes</dt><dd class="num">R$ 50.000 no início e R$ 1.000 por mês (R$ 12.000), total aportado de R$ 62.000.</dd>
+        <dt>Resultado</dt><dd class="num">Renda fixa: <span class="positivo"><span aria-hidden="true">+</span><span class="so-leitor">mais </span>R$ 1.480 (<span aria-hidden="true">+</span><span class="so-leitor">mais </span>3,70%)</span>. Fundo de ações: <span class="negativo"><span aria-hidden="true">−</span><span class="so-leitor">menos </span>R$ 620 (<span aria-hidden="true">−</span><span class="so-leitor">menos </span>2,82%)</span>. Conjunto: <span class="positivo"><span aria-hidden="true">+</span><span class="so-leitor">mais </span>R$ 860 (<span aria-hidden="true">+</span><span class="so-leitor">mais </span>1,39%)</span>.</dd>
+        <dt>O que o acompanhamento fez</dt><dd>Explicou, antes do aporte, que a parte em ações podia cair. Na revisão, mostrou o resultado de cada parte e não mudou a divisão.</dd>
+      </dl>
+      <p class="nota">Caso fictício. Percentuais sobre o total aportado em cada parte. Resultado passado não indica resultado futuro. Investir envolve risco de perda.</p>
+      <button type="button" class="botao fechar">Fechar</button>
+    </div>
+  </dialog>
+
+  <dialog id="caso-c" aria-labelledby="caso-c-t">
+    <div class="ficha">
+      <span class="selo">Caso fictício</span>
+      <h2 id="caso-c-t">Carteira de ações</h2>
+      <dl>
+        <dt>Carteira</dt><dd>100% em ações de poucas empresas, por escolha do cliente.</dd>
+        <dt>Prazo</dt><dd>12 meses.</dd>
+        <dt>Aportes</dt><dd class="num">R$ 12.000 no início e R$ 400 por mês (R$ 4.800), total aportado de R$ 16.800.</dd>
+        <dt>Resultado</dt><dd class="num negativo"><span aria-hidden="true">−</span><span class="so-leitor">menos </span>R$ 1.850, saldo de R$ 14.950. Variação sobre o total aportado: <span aria-hidden="true">−</span><span class="so-leitor">menos </span>11,01%.</dd>
+        <dt>O que o plano dizia sobre esse risco</dt><dd>O plano escrito apontava concentração e perda de capital como riscos desta carteira e recomendava dividir em mais ativos. O cliente decidiu manter a escolha.</dd>
+      </dl>
+      <p class="nota">Caso fictício. Resultado passado não indica resultado futuro. Investir envolve risco de perda.</p>
+      <button type="button" class="botao fechar">Fechar</button>
+    </div>
+  </dialog>
+</body>
+</html>
